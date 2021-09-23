@@ -2,11 +2,18 @@ import time
 import subprocess
 
 from selenium import webdriver
+from selenium.webdriver import ChromeOptions
 
 
 def run_test():
     print('====')
-    driver = webdriver.Chrome()
+    options = ChromeOptions()
+    options.add_argument('--disable-blink-features=AutomationControlled')
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    options.add_experimental_option("useAutomationExtension", False)
+    driver = webdriver.Chrome(options=options)
+    script = """Object.defineProperty(navigator, 'webdriver', {get: function(){return undefined;}})"""
+    driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {"source": script})
     driver.get('https://www.huya.com/667812')
     time.sleep(50)
     driver.close()
