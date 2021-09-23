@@ -23,5 +23,5 @@ WORKDIR /usr/src/app
 RUN pip install -r requirements.txt -i https://pypi.douban.com/simple/
 
 # 复制启动脚本和fluxbox配置文件
-COPY ../deploy/start-selenium-node.sh /opt/bin/
-COPY ../deploy/init /home/seluser/.fluxbox/
+COPY ./deploy/start-selenium-node.sh /opt/bin/
+COPY ./deploy/init /home/seluser/.fluxbox/

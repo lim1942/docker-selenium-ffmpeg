@@ -146,5 +146,5 @@ ENV/
 /site
 
 # End of https://www.gitignore.io/api/python
-.mp4
-.log
+*.mp4
+*.log
