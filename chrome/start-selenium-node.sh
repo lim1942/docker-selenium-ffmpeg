@@ -11,8 +11,12 @@ pacmd set-default-sink v1
 # set the monitor of v1 sink to be the default source
 pacmd set-default-source v1.monitor
 
-rm -f /tmp/.X*lock
+cd /usr/src/app
+
+# install python requirements
+echo "python requirements"
+pip install -r requirements.txt -i https://pypi.douban.com/simple/
 
 # start python
 echo "python3 run.py"
-cd /usr/src/app && python3 run.py
+python3 run.py
