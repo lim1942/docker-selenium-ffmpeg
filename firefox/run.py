@@ -7,7 +7,8 @@ from selenium import webdriver
 def run_test():
     print('====')
     driver = webdriver.Firefox()
-    driver.get('https://music.163.com/#/song?id=488249475')
+    driver.fullscreen_window()
+    driver.get('https://www.huya.com/381656')
     time.sleep(50)
     driver.close()
     print('-----')

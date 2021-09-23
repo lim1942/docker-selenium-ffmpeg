@@ -1,4 +1,4 @@
-FROM selenium/node-chrome:4.0.0-rc-2-prerelease-20210916
+FROM selenium/node-chrome:94.0-chromedriver-94.0-grid-4.0.0-rc-2-prerelease-20210923
 
 # 安装ffmpeg和pip
 USER root
