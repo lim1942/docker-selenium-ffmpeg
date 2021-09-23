@@ -24,4 +24,3 @@ RUN pip install -r requirements.txt -i https://pypi.douban.com/simple/
 
 # 复制项目启动脚本到supervisord
 COPY start-selenium-node.sh /opt/bin/
-
