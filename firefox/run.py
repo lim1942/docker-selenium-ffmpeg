@@ -14,7 +14,7 @@ def run_test():
     print('-----')
 
 
-def start_recording(filepath='/usr/src/app/1.mp4', screensize='1360x1020'):
+def start_recording(filepath='/usr/src/app/1.mp4', screensize='1440x900'):
     cmd = ['/usr/bin/ffmpeg', '-y', '-f', 'alsa', '-ac', '2', '-i', 'pulse',  '-f', 'x11grab', '-framerate', '15',
            '-video_size', screensize, '-i', ':99+0,0', '-c:v', 'libx264', '-preset', 'veryfast', '-b:v', '320k',
            '-maxrate', '320k', '-bufsize', '640k', '-vf', '"format=yuv420p"', '-g', '30', '-c:a', 'aac', '-b:a', '128k',
