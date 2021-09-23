@@ -1,0 +1,16 @@
+1632380455810	geckodriver	INFO	Listening on 127.0.0.1:41719
+1632380456817	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMHJxRj"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+1632380457881	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMHJxRj/search.json.mozlz4", (void 0)))
+1632380460223	Marionette	INFO	Listening on port 40217
+1632380460258	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://s3.music.126.net/web/s/core_cc7b11675e830752723752c9eff87de7.js?cc7b11675e830752723752c9eff87de7, line 96: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_cc7b11675e830752723752c9eff87de7.js?cc7b11675e830752723752c9eff87de7, line 96: unreachable code after return statement
+JavaScript error: https://s3.music.126.net/web/s/core_cc7b11675e830752723752c9eff87de7.js?cc7b11675e830752723752c9eff87de7, line 143: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+1632380512306	Marionette	INFO	Stopped listening on port 40217
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
