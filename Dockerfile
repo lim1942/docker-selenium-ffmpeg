@@ -25,9 +25,3 @@ WORKDIR /usr/src/app
 USER 1200
 
 RUN pip install -r requirements.txt -i https://pypi.douban.com/simple/
-
-
-
-
-
-
