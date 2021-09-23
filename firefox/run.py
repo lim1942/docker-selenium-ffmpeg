@@ -6,7 +6,7 @@ from selenium import webdriver
 
 def run_test():
     print('====')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox()
     driver.get('https://music.163.com/#/song?id=488249475')
     time.sleep(50)
     driver.close()
