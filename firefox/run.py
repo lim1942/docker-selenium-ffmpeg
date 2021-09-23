@@ -1,12 +1,17 @@
 import time
 import subprocess
 
-from selenium import webdriver
+from selenium.webdriver import Firefox, FirefoxProfile, DesiredCapabilities
 
 
 def run_test():
     print('====')
-    driver = webdriver.Firefox()
+    profile = FirefoxProfile()
+    profile.set_preference("dom.webdriver.enabled", False)
+    profile.set_preference('useAutomationExtension', False)
+    profile.update_preferences()
+    desired = DesiredCapabilities.FIREFOX
+    driver = Firefox(profile,desired_capabilities=desired)
     driver.fullscreen_window()
     driver.get('https://www.huya.com/381656')
     time.sleep(50)
